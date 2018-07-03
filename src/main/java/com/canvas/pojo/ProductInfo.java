@@ -48,5 +48,4 @@ public class ProductInfo {
     /** 更新时间*/
     private Date        updateTime;
 
-
 }
