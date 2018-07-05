@@ -1,5 +1,6 @@
 package com.canvas.service;
 
+import com.canvas.dto.CartDTO;
 import com.canvas.pojo.ProductInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,9 +24,9 @@ public interface ProductService {
     ProductInfo save(ProductInfo productInfo);
 
     /** 增加库存*/
-
+    void increaseStock(List<CartDTO> cartDTOList);
 
     /** 减库存*/
-
+    void decreaseStock(List<CartDTO> cartDTOList);
 
 }

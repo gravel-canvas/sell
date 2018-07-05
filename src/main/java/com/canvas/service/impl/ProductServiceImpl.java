@@ -1,6 +1,9 @@
 package com.canvas.service.impl;
 
+import com.canvas.dto.CartDTO;
 import com.canvas.enums.ProductStatusEnum;
+import com.canvas.enums.ResultEnum;
+import com.canvas.exception.SellException;
 import com.canvas.pojo.ProductInfo;
 import com.canvas.repository.ProductInfoRepository;
 import com.canvas.service.ProductService;
@@ -8,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -39,5 +43,30 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return repository.save(productInfo);
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOList) {
+
+    }
+
+    @Override
+    @Transactional
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO : cartDTOList) {
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if (null == productInfo) {
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+
+            Integer result = productInfo.getProductStatus() - cartDTO.getProductQuantity();
+            if (result < 0) {
+                throw  new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+            }
+
+            productInfo.setProductStock(result);
+
+            repository.save(productInfo);
+        }
     }
 }
