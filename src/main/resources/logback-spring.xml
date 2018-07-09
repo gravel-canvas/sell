@@ -24,8 +24,8 @@
         <!-- 滚动策略 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 路径 C:/zzg/JAVA/IDEA/log/sell -->
-            <fileNamePattern>D:/JAVA/IDEA/log/sell/info.%d.log</fileNamePattern>
-            <!--<fileNamePattern>C:/zzg/JAVA/IDEA/log/sell/info.%d.log</fileNamePattern>-->
+            <!--<fileNamePattern>D:/JAVA/IDEA/log/sell/info.%d.log</fileNamePattern>-->
+            <fileNamePattern>/log/sell/info.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
@@ -41,8 +41,8 @@
         <!-- 滚动策略 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 路径 -->
-            <fileNamePattern>D:/JAVA/IDEA/log/sell/error.%d.log</fileNamePattern>
-            <!--<fileNamePattern>C:/zzg/JAVA/IDEA/log/sell/info.%d.log</fileNamePattern>-->
+            <!--<fileNamePattern>D:/JAVA/IDEA/log/sell/error.%d.log</fileNamePattern>-->
+            <fileNamePattern>/log/sell/error.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
