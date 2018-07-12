@@ -15,6 +15,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -38,10 +39,11 @@ public class OrderServiceImplTest {
     @Test
     public void create() {
         OrderDTO orderDTO = new OrderDTO();
-        orderDTO.setBuyerName("飞");
-        orderDTO.setBuyerAddress("天");
+        orderDTO.setBuyerName("晚宴");
+        orderDTO.setBuyerAddress("咸阳宫");
         orderDTO.setBuyerPhone("12345");
         orderDTO.setBuyerOpenid(buyer_openid);
+        // orderDTO.setCreateTime(new Date());
 
         // 购物车
         List<OrderDetail> orderDetailList = new ArrayList<>();
