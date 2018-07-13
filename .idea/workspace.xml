@@ -1,52 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8596043-59b6-4327-b377-ee701e9733e8" name="Default" comment="12-9">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/aspect/SellerAuthorizeAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/config/ProjectUrlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/constant/CookieConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/constant/RedisConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/dto/WechatOpenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/exception/SellerAuthorizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/form/CategoryForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/form/ProductForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/handler/SellExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/SellerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/repository/SellerInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/SellerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/SellerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/utils/CookieUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/canvas/repository/SellerInfoRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/canvas/service/impl/SellerServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/config/WechatAccountConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/config/WechatAccountConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/controller/WechatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/WechatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/enums/ProductStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/canvas/service/impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/canvas/service/impl/ProductServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/success.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common/success.ftl" afterDir="false" />
+    <list default="true" id="a8596043-59b6-4327-b377-ee701e9733e8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/aspect/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerCategoryController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SellerCategoryController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerCategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1200">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            <state relative-caret-position="192">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/aspect/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -160,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/canvas/pojo/OrderDetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/enums/OrderStatusEnum.java" />
@@ -211,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/handler/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/handler/SellExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerCategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canvas/aspect/test.java" />
       </list>
     </option>
   </component>
@@ -247,8 +212,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="875" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="645" />
     <option name="width" value="1060" />
     <option name="height" value="1040" />
   </component>
@@ -265,58 +230,6 @@
             <path>
               <item name="sell" type="b2602c69:ProjectViewProjectNode" />
               <item name="sell" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -591,7 +504,7 @@
       <workItem from="1531356447518" duration="25714000" />
       <workItem from="1531442959908" duration="24962000" />
       <workItem from="1531471631325" duration="754000" />
-      <workItem from="1531472893242" duration="4480000" />
+      <workItem from="1531472893242" duration="4722000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA测试上传GitHub">
       <created>1530519972008</created>
@@ -635,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531387763658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="12-9&#10;SellerCategoryController save方法有缺陷">
+      <created>1531477470073</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531477470073</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -671,9 +591,9 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180117000" />
+    <option name="totallyTimeSpent" value="180359000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -683,7 +603,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="645" y="0" width="1060" height="1040" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -699,7 +619,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.20953436" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.191796" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.25831485" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
@@ -709,7 +629,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" weight="0.22949003" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.13059701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.245" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32995737" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
@@ -741,7 +661,8 @@
     <MESSAGE value="第九章" />
     <MESSAGE value="10-3" />
     <MESSAGE value="12-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-9" />
+    <MESSAGE value="12-9&#10;SellerCategoryController save方法有缺陷" />
+    <option name="LAST_COMMIT_MESSAGE" value="12-9&#10;SellerCategoryController save方法有缺陷" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -764,13 +685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/controller/SellOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1123,8 +1037,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="192">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canvas/aspect/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
