@@ -1,6 +1,10 @@
 package com.canvas.pojo;
 
+import com.canvas.enums.ProductStatusEnum;
+import com.canvas.utils.EnumUtil;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -15,6 +19,7 @@ import java.util.Date;
 
 @Entity
 @Data
+@DynamicUpdate
 public class ProductInfo {
 
     /** 产品ID*/
@@ -37,7 +42,7 @@ public class ProductInfo {
     private String      productIcon;
 
     /** 商品状态，0：正常 1：下架*/
-    private Integer     productStatus;
+    private Integer     productStatus = ProductStatusEnum.UP.getCode();
 
     /** 类目编号*/
     private Integer      categoryType;
@@ -47,5 +52,12 @@ public class ProductInfo {
 
     /** 更新时间*/
     private Date        updateTime;
+
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum() {
+        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
+    }
+
+
 
 }

@@ -61,4 +61,23 @@ public class ProductServiceImplTest {
         ProductInfo productInfo1 = productService.save(productInfo);
         Assert.assertNotNull(productInfo);
     }
+
+    @Test
+    public void onSale() {
+        String productId = "987654";
+
+        ProductInfo productInfo = productService.onSale(productId);
+
+        Assert.assertTrue("商品上架", productInfo.getProductStatusEnum() == ProductStatusEnum.UP);
+    }
+
+    @Test
+    public void offSale() {
+        String productId = "987654";
+
+        ProductInfo productInfo = productService.offSale(productId);
+
+        Assert.assertTrue("商品下架", productInfo.getProductStatusEnum() == ProductStatusEnum.DOWN);
+    }
+
 }

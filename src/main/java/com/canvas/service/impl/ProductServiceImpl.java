@@ -7,6 +7,7 @@ import com.canvas.exception.SellException;
 import com.canvas.pojo.ProductInfo;
 import com.canvas.repository.ProductInfoRepository;
 import com.canvas.service.ProductService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -20,6 +21,7 @@ import java.util.List;
  * @Date: 2018/6/22 13:44
  */
 @Service
+@Slf4j
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
@@ -77,4 +79,47 @@ public class ProductServiceImpl implements ProductService {
             repository.save(productInfo);
         }
     }
+
+    @Override
+    public ProductInfo onSale(String productId) {
+        ProductInfo productInfo = repository.findOne(productId);
+
+        if (null == productId) {
+            log.error("【卖家修改商品状态】商品不存在, productId: {}", productId);
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+
+        if (productInfo.getProductStatusEnum() == ProductStatusEnum.UP) {
+            log.error("【卖家修改商品状态】商品状态不正确, productId: {}", productId);
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+
+        productInfo.setProductStatus(ProductStatusEnum.UP.getCode());
+
+        ProductInfo result = repository.save(productInfo);
+
+        return result;
+        }
+
+    @Override
+    public ProductInfo offSale(String productId) {
+        ProductInfo productInfo = repository.findOne(productId);
+
+        if (null == productId) {
+            log.error("【卖家修改商品状态】商品不存在, productId: {}", productId);
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+
+        if (productInfo.getProductStatusEnum() == ProductStatusEnum.DOWN) {
+            log.error("【卖家修改商品状态】商品状态不正确, productId: {}", productId);
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+
+        productInfo.setProductStatus(ProductStatusEnum.DOWN.getCode());
+
+        ProductInfo result = repository.save(productInfo);
+
+        return result;
+    }
+
 }

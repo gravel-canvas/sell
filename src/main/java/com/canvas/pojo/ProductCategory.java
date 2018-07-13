@@ -18,7 +18,7 @@ import java.util.Date;
  */
 // @Table(name = "t_product_category")
 @Entity
-//@DynamicUpdate
+@DynamicUpdate
 @Data
 public class ProductCategory {
 
