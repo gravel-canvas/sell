@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8596043-59b6-4327-b377-ee701e9733e8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_1_5_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_3_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SecKillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/exception/ResponseBankException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/pojo/mapper/ProductCategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/PushMessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/RedisLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/SecKillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/WebSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/PushMessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/SecKillServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mp3/song.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/canvas/pojo/mapper/ProductCategoryMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/canvas/service/impl/PushMessageServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/SellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/SellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/config/WechatAccountConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/config/WechatAccountConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/controller/BuyerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/BuyerProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/controller/SellerProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/exception/SellException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/exception/SellException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/handler/SellExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/handler/SellExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ProductInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ProductInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ProductVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ProductVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canvas/vo/ResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/wechat.sql" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,6 +49,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
               <caret line="40" column="128" selection-start-line="40" selection-start-column="128" selection-end-line="40" selection-end-column="128" />
+              <folding>
+                <element signature="e#2153#2164#0" expanded="true" />
+                <element signature="e#2503#2518#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -272,11 +238,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="825" />
-    <option name="y" value="26" />
-    <option name="width" value="1165" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="527" />
+    <option name="y" value="17" />
+    <option name="width" value="933" />
+    <option name="height" value="833" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -285,6 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -293,57 +260,11 @@
               <item name="sell" type="b2602c69:ProjectViewProjectNode" />
               <item name="sell" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,7 +538,7 @@
       <workItem from="1531628306398" duration="765000" />
       <workItem from="1531629151425" duration="1884000" />
       <workItem from="1531635352457" duration="2442000" />
-      <workItem from="1531748917557" duration="618000" />
+      <workItem from="1531748917557" duration="1318000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA测试上传GitHub">
       <created>1530519972008</created>
@@ -668,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531477470073</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="大部分完成">
+      <created>1531749973267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531749973267</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -704,7 +632,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208832000" />
+    <option name="totallyTimeSpent" value="209532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,7 +644,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="422" y="14" width="746" height="666" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -740,7 +668,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978602" visible="true" weight="0.27680966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978602" visible="true" weight="0.6002907" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32995737" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -775,7 +703,8 @@
     <MESSAGE value="10-3" />
     <MESSAGE value="12-9" />
     <MESSAGE value="12-9&#10;SellerCategoryController save方法有缺陷" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-9&#10;SellerCategoryController save方法有缺陷" />
+    <MESSAGE value="大部分完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="大部分完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1258,6 +1187,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="40" column="128" selection-start-line="40" selection-start-column="128" selection-end-line="40" selection-end-column="128" />
+          <folding>
+            <element signature="e#2153#2164#0" expanded="true" />
+            <element signature="e#2503#2518#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
