@@ -4,6 +4,7 @@ import com.canvas.pojo.ProductInfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -12,7 +13,9 @@ import java.util.List;
  * @Date: 2018/6/22 15:03
  */
 @Data
-public class ProductVO {
+public class ProductVO implements Serializable {
+
+    private static final long serialVersionUID = 6106224949569568747L;
 
     @JsonProperty("name")
     private String      categoryName;

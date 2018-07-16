@@ -6,15 +6,14 @@ import com.canvas.dto.OrderDTO;
 import com.canvas.enums.OrderStatusEnum;
 import com.canvas.enums.PayStatusEnum;
 import com.canvas.enums.ResultEnum;
+import com.canvas.exception.ResponseBankException;
 import com.canvas.exception.SellException;
 import com.canvas.pojo.OrderDetail;
 import com.canvas.pojo.OrderMaster;
 import com.canvas.pojo.ProductInfo;
 import com.canvas.repository.OrderDetailRepository;
 import com.canvas.repository.OrderMasterRepository;
-import com.canvas.service.OrderService;
-import com.canvas.service.PayService;
-import com.canvas.service.ProductService;
+import com.canvas.service.*;
 import com.canvas.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -51,6 +50,12 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private PayService payService;
 
+    @Autowired
+    private PushMessageService pushMessageService;
+
+    @Autowired
+    private WebSocket webSocket;
+
 
     @Override
     @Transactional
@@ -64,6 +69,8 @@ public class OrderServiceImpl implements OrderService {
             ProductInfo productInfo = productService.findOne(orderDetail.getProductId());
             if (null == productInfo) {
                 throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+                // 演示返回403状态码
+                // throw new ResponseBankException();
             }
 
             // 2. 计算总价
@@ -94,6 +101,8 @@ public class OrderServiceImpl implements OrderService {
                 new CartDTO(e.getProductId(), e.getProductQuantity())).collect(Collectors.toList());
         productService.decreaseStock(cartDTOList);
 
+        // 发送websocket消息
+        webSocket.sendMessage(orderDTO.getOrderId());
 
         return orderDTO;
     }
@@ -188,6 +197,9 @@ public class OrderServiceImpl implements OrderService {
             log.error("【完结订单】 更新失败, orderMaster: {}", orderMaster);
             throw new SellException(ResultEnum.ORDER_UPDATE_FAIL);
         }
+
+        // 推送微信模板消息
+        pushMessageService.orderStatus(orderDTO);
 
         return orderDTO;
     }

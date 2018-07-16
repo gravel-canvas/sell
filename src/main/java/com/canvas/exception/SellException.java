@@ -1,11 +1,13 @@
 package com.canvas.exception;
 
 import com.canvas.enums.ResultEnum;
+import lombok.Getter;
 
 /**
  * @Author: 宗恣
  * @Date: 2018/7/3 0003 17:25
  */
+@Getter
 public class SellException extends RuntimeException {
 
     private Integer code;
